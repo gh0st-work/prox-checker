@@ -1,0 +1,46 @@
+[tool.poetry]
+name = "prox-checker"
+version = "0.1.0"
+description = "Async python proxy checker"
+authors = ["Anton Nechaev <antonnechaev990@gmail.com>"]
+keywords = ["python", "proxy", "async", "aiohttp", "checker"]
+license = "MIT"
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
+    "Operating System :: OS Independent",
+    "Topic :: Internet",
+    "Topic :: Internet :: Proxy Servers",
+    "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
+    "Topic :: Software Development",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Utilities",
+    "Typing :: Typed",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+]
+readme = "README.md"
+repository = "https://github.com/gh0st-work/prox-checker"
+homepage = "https://github.com/gh0st-work/prox-checker"
+packages = [{include = "prox_checker"}]
+
+
+
+[tool.poetry.dependencies]
+python = "^3.11"
+aiohttp = "^3.8.3"
+aiohttp-socks = "^0.7.1"
+requests = "^2.28.2"
+beautifulsoup4 = "^4.11.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
